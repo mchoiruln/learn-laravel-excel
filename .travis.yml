@@ -1,0 +1,11 @@
+language: php
+php:
+  - '7.2'
+install:
+  - composer install
+script:
+  - cp .env.example .env
+  - php artisan key:generate
+  - ./vendor/bin/phpunit
+cache:
+  - vendor
