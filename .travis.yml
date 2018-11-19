@@ -1,5 +1,5 @@
 language: php
 php:
-  - '7.2'
-  - hhvm # on Trusty only
-  - nightly
+  - '7.2.0'
+before-script:
+  - composer update
