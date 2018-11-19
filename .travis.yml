@@ -6,5 +6,6 @@ install:
 script:
   - cp .env.example .env
   - php artisan key:generate
+  - ./vendor/bin/phpunit
 cache:
   - vendor
