@@ -4,4 +4,6 @@ php:
 install:
   - composer install
 script:
-  - php artisan generate:key
+  - php artisan key:generate
+cache:
+  - vendor
