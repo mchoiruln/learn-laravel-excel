@@ -1,9 +1,8 @@
 language: php
-php:
-  - '7.2.0'
 install:
   - composer install
 script:
+  - cp .env.example .env
   - php artisan key:generate
 cache:
   - vendor
