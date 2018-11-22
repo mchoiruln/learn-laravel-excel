@@ -11,7 +11,7 @@ use Illuminate\Http\Request;
  */
 class ExcelController extends Controller
 {
-	public function create()
+	public function create(Request $request)
 	{
 		$e = Excel::create('demofile', function($excel){
 				$excel->sheet('sheet_one');
@@ -22,6 +22,6 @@ class ExcelController extends Controller
 				$excel->setDescription('Tes demo create xls');
 			});
 
-		$e->export('xls');
+		$e->string('xls');
 	}
 }
