@@ -22,6 +22,6 @@ class ExcelController extends Controller
 				$excel->setDescription('Tes demo create xls');
 			});
 
-		$e->export('pdf');
+		$e->export('xls');
 	}
 }
